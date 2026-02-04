@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Square = ({colorValue,hexValue, isDarkText}) => {
+const Square = ({ colorValue, hexValue, isDarkText }) => {
   return (
     <section
         className='square'
