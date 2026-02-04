@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 22px;
+}
+
+body{
+  min-height: 100vh;
+  font-family: sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square{
+  width: 300px;
+  height: 300px;
+  border: 3px dotted;
+  border-radius: 0.5rem;
+  box-shadow:  2px 2px 5px #000;
+  display: grid;
+  place-content: center;
+}
+
+.square p {
+  text-align: center;
+}
+
+form{
+  width: 200px;
+}
+
+label{
+  position: absolute;
+  left: -999999px;
+}
+
+input[type='text'] {
+  margin-top: 0.5rem;
+  padding: 0.25;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 0.25rem;
+  outline: none;
+}
