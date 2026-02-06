@@ -1,8 +1,16 @@
 import React from 'react'
+import Cell from './Cell'
 
-const Row = () => {
+const Row = ( { item }) => {
   return (
-    <div>Row</div>
+    <tr>
+        {Object.entries(item).map(([key,value])=>
+                {
+                return (
+                    <Cell key={key} cellData={JSON.stringify(value)} />
+                )
+            })}
+    </tr>
   )
 }
 

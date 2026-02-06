@@ -56,10 +56,21 @@ li{
   overflow-x: auto;
   padding-top: 52px;
 }
-button:hover {
-  border-color: #646cff;
+table{
+  width: 100%;
+  border-collapse: collapse;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+th, td{
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+th{
+  background-color: #f4f4f4;
+}
+tr:nth-child(even){
+  background-color: #f9f9f9;
+}
+tr:hover{
+  background-color: #f1f1f1;
 }
