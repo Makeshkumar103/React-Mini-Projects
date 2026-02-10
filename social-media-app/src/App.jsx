@@ -9,7 +9,7 @@ import PostPage from './PostPage'
 import Post from './Post'
 import { useEffect, useState } from 'react'
 import format from 'date-fns/format'
-// import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'
 // import PostLayout from './PostLayout'
 
 function App() {
@@ -69,7 +69,11 @@ function App() {
     setPostBody('');
     // navigate('/');
   }
-
+  const handledelete = (e) => {
+    e.preventDefault();
+    const postsList = posts.filter(post => post.id !== parseInt(e.target.id))
+    setPosts(postsList);
+  }
   return (
       <div className="App">
        {/* <nav>
@@ -99,11 +103,23 @@ function App() {
         search={search}
         setSearch={setSearch}
         />
-        <Home posts={searchResult}/>
-        <Newpost  handleSubmit={handleSubmit} postTitle={postTitle} setPostTitle={setPostTitle} postBody={postBody} setPostBody={setPostBody}/>
-        <PostPage />
-        <About />
-        <Missing />
+        <Routes>
+          <Route path="/" element={<Home posts={searchResult}/>} >
+          <Route path="post" />
+            <Route index element={ <Newpost  
+              handleSubmit={handleSubmit} 
+              postTitle={postTitle} 
+              setPostTitle={setPostTitle} 
+              postBody={postBody} 
+              setPostBody={setPostBody}
+              /> } 
+            />
+            <Route path="id" element={<PostPage posts={posts} handledelete={handledelete} />} />
+          </Route>
+          {/* <Route path="postpage" element={<PostPage /> } /> */}
+          <Route path="about" element={<About /> } />
+          <Route path="*" element={<Missing /> } />
+        </Routes>
         <Footer />
       </div>
   )
