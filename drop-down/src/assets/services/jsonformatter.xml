@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<departments>
+    <deptId>1</deptId>
+    <deptName>ECE A</deptName>
+    <students>
+        <studentId>101</studentId>
+        <studentName>Hari</studentName>
+    </students>
+    <students>
+        <studentId>102</studentId>
+        <studentName>Kannan</studentName>
+    </students>
+    <students>
+        <studentId>103</studentId>
+        <studentName>Manoj</studentName>
+    </students>
+</departments>
+<departments>
+    <deptId>2</deptId>
+    <deptName>ECE B</deptName>
+    <students>
+        <studentId>201</studentId>
+        <studentName>Makesh</studentName>
+    </students>
+    <students>
+        <studentId>202</studentId>
+        <studentName>Deepa Shri</studentName>
+    </students>
+</departments>
+<selectedValues>
+    <deptId>1</deptId>
+    <studentId>101</studentId>
+</selectedValues>
+<savedOutput>
+    <department>ECE A</department>
+    <student>Hari</student>
+</savedOutput>
