@@ -85,7 +85,10 @@ body {
   position: absolute;
   left: -99999px;
 }
-
+.Nav{
+  background-color: #333;
+  padding: 5px ;
+}
 .Nav ul{
   /* color : #fff; */
   list-style-type: none;
@@ -119,6 +122,27 @@ body {
 .Nav li:hover a,
 .Nav li:focus a {
   cursor: pointer;
+}
+
+.newPostForm{
+display: flex;
+flex-direction: column;
+margin: 10px 0;
+}
+
+.newPostForm input,textarea{
+ border-radius: 3px;
+ padding: 10px;
+ margin: 15px 0px;
+}
+.newPostForm textarea{
+ height: 100px;
+}
+
+.newPostForm button{
+  border-radius: 7px;
+  padding: 15px;
+  font-weight: 600;
 }
 
 .Home, .NewPost, .PostPage, .About, .Missing {
