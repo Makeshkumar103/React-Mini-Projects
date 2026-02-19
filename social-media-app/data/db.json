@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My First Post",
+      "datetime": "July 01, 2021 11:17:36 AM",
+      "body": "Made a Video about Tesla Q1 results"
+    },
+    {
+      "id": "2",
+      "title": "My Second Post",
+      "datetime": "July 02, 2021 11:17:36 AM",
+      "body": "Made a Video about Apple Q1 results"
+    },
+    {
+      "id": "3",
+      "title": "My Third Post",
+      "datetime": "July 03, 2021 11:17:36 AM",
+      "body": "Made a Video about Amazon Q1 results"
+    },
+    {
+      "id": "4",
+      "title": "My Fourth Post",
+      "datetime": "July 04, 2021 11:17:36 AM",
+      "body": "Made a Video about Google Q1 results"
+    }
+  ]
+}
