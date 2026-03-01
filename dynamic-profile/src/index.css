@@ -1,0 +1,173 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 920px;
+  min-height: 100vh;
+  background-color: #242424;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  /* background: #eb8080; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  padding: 15px 0px ;
+  text-align: center;
+  /* width: 900px; */
+  background-color: rgb(114, 233, 168);
+}
+
+/* 
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0% 20%;
+  width: 400px;
+  width: 350px;  
+}
+
+.card {
+  background: white;
+  height: 80px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.card:hover {
+  background-color: #eef6ff;  light gray / bluish 
+}
+
+/* .card img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 2px;
+} */
+
+/* .card h3 {
+  margin: 10px 0 5px; 
+  margin: 5px 0px;
+} */
+
+.card p {
+  color: gray;
+}
+
+.info{
+  text-align: left;
+  padding: 0px 15px;
+  /* padding: 0px;
+  margin: 0px; */
+  /* background-color: gray; */
+  width: 70%;
+}
+.reverse{
+  flex-direction: row-reverse;
+} 
+.align{
+  text-align: right;
+
+}
+.playerName{
+  font-weight: bold;
+  color: black;
+}
+.icon{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* justify-self: flex-end; */
+  transform: rotate(-45deg);
+  /* background-color: blue; */
+}
+
+.teams-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* margin-bottom: 12px; */
+  padding: 0px 15px;
+  /* background-color: red; */
+}
+
+.team-header.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* .team-header img {
+  width: 80px;
+  height: 80px;
+} */
+
+.card {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  padding: 0px 15px;
+  /* margin-bottom: 10px; */
+  /* border-radius: 3px; */
+  background: #fff;
+  /* width: 50%; */
+}
+
+.card img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 2px;
+} 
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card:hover {
+  background: #3fc978;
+}
+ul,li{
+  list-style-type: none;
+  padding-left: 2px;
+}
+
